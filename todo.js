@@ -1,11 +1,4 @@
-const todoList=[{
-    name:'',
-    dueDate:''
-}, {
-    name:'',
-    dueDate:'',
-    }
-];
+const todoList=[];
 
 renderTodoList();
 
@@ -17,13 +10,13 @@ function renderTodoList(){
         const name=toDOObject.name;
         const dueDate = toDOObject.dueDate;
         const html = `
-            <p>
-                 ${name} ${dueDate}
+            <div>${name}</div>
+            <div>${dueDate}</div> 
                 <button onclick="
                 todoList.splice(${i},1);
                 renderTodoList();
-                ">Delete</button>
-            </p>`
+            " class="deleteToDo">Delete</button>
+            `;
         todoListHtml += html;
     }
 

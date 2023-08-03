@@ -1,0 +1,35 @@
+body{
+    font-family: Arial,sans-serif;
+}
+.todoGrid,
+.todoInputGrid{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+}
+.todoInputGrid{
+    margin-bottom: 10px;
+    align-items: stretch;
+}
+.nameInput,
+.dateInput{
+    font-size: 15px;
+    padding: 6px;
+}
+.addToDo{
+    background-color:green;
+    color: white;
+    border: none;
+    font-size:15px;
+    cursor: pointer;
+}
+.deleteToDo{
+    background-color: darkred;
+    color: white;
+    border: none;
+    font-size:15px;
+    cursor: pointer;
+    padding: 10px;
+}
