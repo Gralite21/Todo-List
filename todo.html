@@ -6,13 +6,17 @@
 </head>
 <body>
     <p> Todo List</p>
-    <div class="todoInputGrid">
-        <input placeholder="Todo name" class="todoInput nameInput">
-        <input type="date" class="inputDate dateInput">
-        <button onclick="addTodo()" class="addToDo">Add</button>
-    </div>
-    <div class="displayList todoGrid"></div>
 
+    <div class="todoInputGrid">
+        <input type="text" placeholder="Todo name"
+               class="todoInput nameInput">
+        <input type="date"
+               class="inputDate dateInput">
+        <button onclick="addTodo()"
+                class="addToDo">Add</button>
+    </div>
+
+    <div class="displayList todoGrid"></div>
 
     <script src="todo.js"></script>
 </body>
